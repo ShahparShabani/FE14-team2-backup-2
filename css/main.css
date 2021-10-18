@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+/** Color Palette **/
+/* Basic colors*/
+/* gray */
+/* Yellow */
+/* Amber */
+/* Orange */
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+header {
+  position: relative;
+  padding: 0;
+}
+
+header .c-navbar {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent !important;
+  z-index: 2;
+  margin: auto;
+  padding: 0 44px;
+}
+
+header .c-navbar .c-header-inner {
+  padding: 44px 0;
+  margin: auto;
+}
+
+header .c-navbar #logo-img {
+  width: 300px;
+  max-width: 300px;
+  height: auto;
+}
+
+main {
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  /* Center align the text within the three columns below the carousel */
+  /* rtl:begin:ignore */
+  /* rtl:end:ignore */
+  /* Featurettes
+  ------------------------- */
+  /* Thin out the marketing headings */
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+}
+
+main .carousel {
+  margin-bottom: 4rem;
+}
+
+main .carousel .carousel-item {
+  height: 40rem;
+}
+
+main .c-marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+main .c-marketing h2 {
+  font-weight: 400;
+}
+
+main .c-marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+main .c-featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+main .c-featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -0.05rem;
+}
+
+@media (min-width: 40em) {
+  main .c-featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  main .c-featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+#footer-container {
+  background-color: #ffc400;
+  color: #fff;
+}
+
+#footer-container a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

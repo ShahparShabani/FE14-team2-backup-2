@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import "variables";
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+header {
+  position: relative;
+  padding: 0;
+
+  .c-navbar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent !important;
+    z-index: 2;
+    margin: auto;
+    padding: 0 44px;
+
+    .c-header-inner {
+      padding: 44px 0;
+      margin: auto;
+    }
+
+    #logo-img {
+      width: 300px;
+      max-width: 300px;
+      height: auto;
+    }
+  }
+}
+
+main {
+  .carousel {
+    margin-bottom: 4rem;
+
+    .carousel-item {
+      height: 40rem;
+    }
+  }
+
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+
+  /* Center align the text within the three columns below the carousel */
+  .c-marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .c-marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .c-marketing .col-lg-4 p {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+  }
+  /* rtl:end:ignore */
+
+  /* Featurettes
+  ------------------------- */
+
+  .c-featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+
+  /* Thin out the marketing headings */
+  .c-featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -0.05rem;
+  }
+
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+  @media (min-width: 40em) {
+    .c-featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 62em) {
+    .c-featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+}
+
+#footer-container {
+  background-color: $amber-a400;
+  color: $white;
+
+  a {
+    text-decoration: none;
+  }
+}
