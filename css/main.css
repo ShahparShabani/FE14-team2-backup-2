@@ -48,7 +48,12 @@ header .c-fixed-top {
   right: 0 !important;
   left: 0 !important;
   z-index: 1030 !important;
-  background-color: #dee2e6 !important;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  color: black !important;
+}
+
+header .c-fixed-top .active {
+  color: black !important;
 }
 
 header .c-navbar {
@@ -58,6 +63,11 @@ header .c-navbar {
   right: 0 !important;
   left: 0 !important;
   background: transparent !important;
+  color: white !important;
+}
+
+header .c-navbar .active {
+  color: white !important;
 }
 
 header .c-navbar .c-header-inner {
