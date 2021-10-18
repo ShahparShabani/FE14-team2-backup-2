@@ -18,45 +18,51 @@
 
     <!-- Header container begin-->
     <header>
-        <nav class="c-navbar navbar navbar-expand-md navbar-dark bg-dark w-100">
-            <div class="c-header-inner w-100">
-                <div class="container-fluid">
+        <div id="title-logo-wrapper" class="container-fluid text-center w-100">
+            <a class="navbar-brand p-5" href="#"><img id="logo-img"
+                    src="//images.squarespace-cdn.com/content/v1/5415b390e4b07804ec78d04e/1588883598647-O30DJA6YJ7H0YN8MIH1N/Alternative+Logo+Transparent+Background+white.png?format=1500w"
+                    alt="Ariana Jordan Photography | Kentucky Wedding Photographer | Lexington, Berea, Richmond, Danville"></a>
+        </div>
+
+
+        <nav id="navbar_top" class="navbar c-navbar navbar-expand-md navbar-dark bg-dark w-100">
+            <!-- <div class="c-header-inner w-100"> -->
+            <!-- <div class="container-fluid">
                     <div id="title-logo-wraper" class="text-center w-100">
                         <a class="navbar-brand" href="#"><img id="logo-img"
                                 src="//images.squarespace-cdn.com/content/v1/5415b390e4b07804ec78d04e/1588883598647-O30DJA6YJ7H0YN8MIH1N/Alternative+Logo+Transparent+Background+white.png?format=1500w"
                                 alt="Ariana Jordan Photography | Kentucky Wedding Photographer | Lexington, Berea, Richmond, Danville"></a>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                   
+                </div> -->
+            <div class="container-fluid sticky-top p-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 justify-content-evenly">
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase" aria-current="page" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase" href="#">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase" href="#">testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase" href="#">customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase" href="#">contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="container-fluid">
-
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 justify-content-evenly">
-                            <li class="nav-item">
-                                <a class="nav-link active text-uppercase" aria-current="page" href="index.html">home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-uppercase" href="#">about</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-uppercase" href="#">portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-uppercase" href="#">testimonials</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-uppercase" href="#">customers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-uppercase" href="#">contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <!-- </div> -->
             </div>
         </nav>
     </header>
@@ -74,12 +80,11 @@
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            
+
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/home/banner1.jpg" alt="carousel image1"
-                        class="d-block w-100" />
+                    <img src="img/home/banner1.jpg" alt="carousel image1" class="d-block w-100" />
                 </div>
                 <div class="carousel-item">
                     <img src="img/home/jeremy-bishop-unsplash.jpeg" alt="carousel image2" class="d-block w-100" />
@@ -134,9 +139,9 @@
                 <div class="col">
                     <div class="p-3 text-center h-100">
                         <i class="fas fa-money-bill-wave-alt p-3 iconSize-60 text-gold textShadowIcons"></i>
-                            <h2 class="fs-4 fw-light text-uppercase">Best Price Guarantee</h2>
-                            <p class="c-font-size-root">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Quod reiciendis ab minima eos!</p>
+                        <h2 class="fs-4 fw-light text-uppercase">Best Price Guarantee</h2>
+                        <p class="c-font-size-root">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quod reiciendis ab minima eos!</p>
                     </div>
                 </div>
             </div>
@@ -273,9 +278,9 @@
     <!-- Footer container end-->
 
     <!-- bootstrap js -->
-    <script src="./utilities/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="utilities/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
     <!-- personal js -->
-    <script src="./js/main.js"></script>
+    <script src="ts/main.js"></script>
 </body>
 
 </html>

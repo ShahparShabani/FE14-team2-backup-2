@@ -15,25 +15,46 @@ header {
   position: relative;
   padding: 0;
 
-  .c-navbar {
-    display: block;
+  #title-logo-wrapper {
     position: absolute;
     top: 0;
-    left: 0;
-    background: transparent !important;
     z-index: 2;
-    margin: auto;
-    padding: 0 44px;
-
-    .c-header-inner {
-      padding: 44px 0;
-      margin: auto;
-    }
+    box-sizing: border-box;
 
     #logo-img {
       width: 300px;
       max-width: 300px;
       height: auto;
+    }
+  }
+
+  .navbar {
+    display: block;
+    z-index: 2;
+    margin: auto;
+    padding: 0 44px;
+  }
+
+  .c-fixed-top {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    z-index: 1030 !important;
+    background-color: $gray-300 !important;
+  }
+
+  .c-navbar {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0 !important;
+    left: 0 !important;
+    background: transparent !important;
+
+    .c-header-inner {
+      padding: 44px 0;
+      margin: auto;
     }
   }
 }
