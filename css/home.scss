@@ -95,15 +95,14 @@ header {
     }
   }
 
-  
-/* Main content ------------------------- */
-main {
+  /* Main content ------------------------- */
+  main {
     /* Featurettes ------------------------- */
-  
+
     .c-featurette-divider {
       margin: 5rem 0; /* Space out the Bootstrap <hr> more */
     }
-  
+
     /* Thin out the marketing headings */
     .c-featurette-heading {
       font-weight: 300;
@@ -111,73 +110,36 @@ main {
       letter-spacing: -0.05rem;
     }
   }
-  
-  /* RESPONSIVE CSS --------------------------- */
-  
-  @media (min-width: 40em) {
-    .c-featurette-heading {
-      font-size: 50px;
-    }
+}
+
+/* RESPONSIVE CSS --------------------------- */
+
+@media (min-width: 40em) {
+  .c-featurette-heading {
+    font-size: 50px;
   }
-  
-  @media (min-width: 62em) {
-    .c-featurette-heading {
-      margin-top: 7rem;
-    }
+}
+
+@media (min-width: 62em) {
+  .c-featurette-heading {
+    margin-top: 7rem;
   }
-  
-  #footer-container {
-    background-color: $amber-a400;
-    color: $white;
-  
-    a {
-      text-decoration: none;
-    }
-  }
-  
-  /* Footer style   ------------------------- */
+}
+
+// media queries for large screen
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   footer {
-    font-size: 0.9rem;
-    .footer-col {
-      ul {
-        padding-left: 0;
-  
-        li {
-          list-style-type: none;
-        }
-  
-        li:hover {
-          font-size: 1rem;
-          cursor: pointer;
-        }
-      }
-    }
-  
-    .footer-social-links a:hover {
-      font-size: larger;
-    }
-  
-    h4,
-    .footer-text {
-      font-family: "Satisfy", cursive;
+    div.footer-text {
+      font-size: 1.1rem;
     }
   }
-  
-  // media queries for large screen
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    footer {
-      div.footer-text {
-        font-size: 1.1rem;
-      }
+}
+
+// media queries for xl-xxl screen
+@media screen and (min-width: 1200px) {
+  footer {
+    div.footer-text {
+      font-size: 1rem;
     }
   }
-  
-  // media queries for xl-xxl screen
-  @media screen and (min-width: 1200px) {
-    footer {
-      div.footer-text {
-        font-size: 1rem;
-      }
-    }
-  }
-  
+}
