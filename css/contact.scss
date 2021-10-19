@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Andada Pro', serif;
+    background-image: url("../img/alinaImg/color-g3cd038797_1280.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+         
+}
+
+section {
+
+    font-size:1.2rem;
+
+    iframe {
+        width: 50%;
+        height: 300px;
+        margin-right:0;
+        
+    }
+
+    .contact-form {
+        border-top: 1px solid rgb(138,209,187);
+        border-bottom: 1px solid rgb(138,209,187);
+        width: 60%;
+
+    }
+}
+
+footer {
+
+    font-size: .9rem;
+    .footer-col {
+        ul {
+            padding-left: 0;
+
+            li {
+                list-style-type: none;
+        } 
+
+            li:hover {
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+        
+    }
+
+    .footer-social-links a:hover {
+        font-size: larger;
+    }
+
+    h4,
+    .footer-text {
+        font-family: 'Satisfy', cursive;
+    }
+
+}
+
+// media queries for small and medium  screen
+@media screen  and (min-width: 576px) and (max-width: 991px) {
+    section {
+        iframe {
+        width: 100%;
+        min-height: auto;
+        }
+    }
+}
+
+// media queries for large screen
+@media screen  and (min-width: 992px) and (max-width: 1199px) {
+    section {
+
+        iframe {
+            width: 100%;
+            min-height: auto;
+        }
+       
+    }
+
+    footer {
+        div.footer-text {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+// media queries for xl-xxl screen
+@media screen  and (min-width: 1200px) {
+  
+    footer {
+        div.footer-text {
+            font-size: 1rem;
+        }
+    }
+}
