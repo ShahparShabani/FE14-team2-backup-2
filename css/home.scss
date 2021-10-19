@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import "variables";
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+/* Header style ------------------------- */
+
+header {
+  position: relative;
+  padding: 0;
+
+  #title-logo-wrapper {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    box-sizing: border-box;
+
+    #logo-img {
+      width: 300px;
+      max-width: 300px;
+      height: auto;
+    }
+  }
+
+  .navbar {
+    display: block;
+    z-index: 2;
+    margin: auto;
+    padding: 0 44px;
+  }
+
+  .c-fixed-top {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    z-index: 1030 !important;
+    background-color: rgba(
+      var(--bs-light-rgb),
+      var(--bs-bg-opacity)
+    ) !important;
+    color: black !important;
+
+    .active {
+      color: black !important;
+    }
+  }
+
+  .c-navbar {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0 !important;
+    left: 0 !important;
+    background: transparent !important;
+    color: white !important;
+
+    .active {
+      color: white !important;
+    }
+
+    .c-header-inner {
+      padding: 44px 0;
+      margin: auto;
+    }
+  }
+
+  /* Carousel ------------------------- */
+
+  #myCarousel {
+    .carousel-item {
+      // Force carousel image to cover the entire screen height
+      img {
+        object-fit: cover;
+        object-position: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .carousel {
+    margin-bottom: 4rem;
+
+    .carousel-item {
+      height: 40rem;
+    }
+  }
+
+  
+/* Main content ------------------------- */
+main {
+    /* Featurettes ------------------------- */
+  
+    .c-featurette-divider {
+      margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    }
+  
+    /* Thin out the marketing headings */
+    .c-featurette-heading {
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -0.05rem;
+    }
+  }
+  
+  /* RESPONSIVE CSS --------------------------- */
+  
+  @media (min-width: 40em) {
+    .c-featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .c-featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
+  #footer-container {
+    background-color: $amber-a400;
+    color: $white;
+  
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  /* Footer style   ------------------------- */
+  footer {
+    font-size: 0.9rem;
+    .footer-col {
+      ul {
+        padding-left: 0;
+  
+        li {
+          list-style-type: none;
+        }
+  
+        li:hover {
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .footer-social-links a:hover {
+      font-size: larger;
+    }
+  
+    h4,
+    .footer-text {
+      font-family: "Satisfy", cursive;
+    }
+  }
+  
+  // media queries for large screen
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    footer {
+      div.footer-text {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  
+  // media queries for xl-xxl screen
+  @media screen and (min-width: 1200px) {
+    footer {
+      div.footer-text {
+        font-size: 1rem;
+      }
+    }
+  }
+  

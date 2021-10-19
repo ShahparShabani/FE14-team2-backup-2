@@ -12,23 +12,9 @@ body {
 }
 
 /* Header style ------------------------- */
-
 header {
   position: relative;
   padding: 0;
-
-  #title-logo-wrapper {
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    box-sizing: border-box;
-
-    #logo-img {
-      width: 300px;
-      max-width: 300px;
-      height: auto;
-    }
-  }
 
   .navbar {
     display: block;
@@ -43,7 +29,10 @@ header {
     right: 0 !important;
     left: 0 !important;
     z-index: 1030 !important;
-    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+    background-color: rgba(
+      var(--bs-light-rgb),
+      var(--bs-bg-opacity)
+    ) !important;
     color: black !important;
 
     .active {
@@ -52,79 +41,9 @@ header {
   }
 
   .c-navbar {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0 !important;
-    left: 0 !important;
-    background: transparent !important;
-    color: white !important;
-
-    .active {
-      color: white !important;
-    }
-
     .c-header-inner {
       padding: 44px 0;
       margin: auto;
-    }
-  }
-
-  /* Carousel ------------------------- */
-
-  #myCarousel {
-    .carousel-item {
-
-      // Force carousel image to cover the entire screen height
-      img {
-        object-fit: cover;
-        object-position: center;
-        height: 100vh;
-        overflow: hidden;
-      }
-    }
-  }
-
-  .carousel {
-    margin-bottom: 4rem;
-
-    .carousel-item {
-      height: 40rem;
-    }
-
-}
-
-/* Main content ------------------------- */
-
-main {
-
-  
-  }
-
-  /* Featurettes ------------------------- */
-
-  .c-featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-  }
-
-  /* Thin out the marketing headings */
-  .c-featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -0.05rem;
-  }
-
-  /* RESPONSIVE CSS --------------------------- */
-
-  @media (min-width: 40em) {
-    .c-featurette-heading {
-      font-size: 50px;
-    }
-  }
-
-  @media (min-width: 62em) {
-    .c-featurette-heading {
-      margin-top: 7rem;
     }
   }
 }
@@ -166,7 +85,6 @@ footer {
   }
 }
 
-
 // media queries for large screen
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   footer {
@@ -184,4 +102,3 @@ footer {
     }
   }
 }
-
