@@ -4,16 +4,12 @@
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: 'Andada Pro', serif;
-  background-image: url("../img/alinaImg/color-g3cd038797_1280.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  font-family: "Andada Pro", serif;
 }
 
 section {
@@ -32,51 +28,10 @@ section .contact-form {
   width: 60%;
 }
 
-footer {
-  font-size: .9rem;
-}
-
-footer .footer-col ul {
-  padding-left: 0;
-}
-
-footer .footer-col ul li {
-  list-style-type: none;
-}
-
-footer .footer-col ul li:hover {
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-footer .footer-social-links a:hover {
-  font-size: larger;
-}
-
-footer h4,
-footer .footer-text {
-  font-family: 'Satisfy', cursive;
-}
-
-@media screen and (min-width: 576px) and (max-width: 991px) {
+@media screen and (min-width: 576px) and (max-width: 1199px) {
   section iframe {
     width: 100%;
     min-height: auto;
   }
 }
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  section iframe {
-    width: 100%;
-    min-height: auto;
-  }
-  footer div.footer-text {
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  footer div.footer-text {
-    font-size: 1rem;
-  }
-}
+/*# sourceMappingURL=contact.css.map */
