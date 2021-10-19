@@ -11,6 +11,8 @@ body {
   padding: 0;
 }
 
+/* Header style ------------------------- */
+
 header {
   position: relative;
   padding: 0;
@@ -43,6 +45,7 @@ header {
     z-index: 1030 !important;
     background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
     color: black !important;
+
     .active {
       color: black !important;
     }
@@ -56,6 +59,7 @@ header {
     left: 0 !important;
     background: transparent !important;
     color: white !important;
+
     .active {
       color: white !important;
     }
@@ -65,37 +69,39 @@ header {
       margin: auto;
     }
   }
-}
 
-main {
+  /* Carousel ------------------------- */
+
+  #myCarousel {
+    .carousel-item {
+
+      // Force carousel image to cover the entire screen height
+      img {
+        object-fit: cover;
+        object-position: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+    }
+  }
+
   .carousel {
     margin-bottom: 4rem;
 
     .carousel-item {
       height: 40rem;
     }
+
+}
+
+/* Main content ------------------------- */
+
+main {
+
+  
   }
 
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
-
-  /* Center align the text within the three columns below the carousel */
-  .c-marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  .c-marketing h2 {
-    font-weight: 400;
-  }
-  /* rtl:begin:ignore */
-  .c-marketing .col-lg-4 p {
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
-  }
-  /* rtl:end:ignore */
-
-  /* Featurettes
-  ------------------------- */
+  /* Featurettes ------------------------- */
 
   .c-featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
@@ -105,12 +111,10 @@ main {
   .c-featurette-heading {
     font-weight: 300;
     line-height: 1;
-    /* rtl:remove */
     letter-spacing: -0.05rem;
   }
 
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
+  /* RESPONSIVE CSS --------------------------- */
 
   @media (min-width: 40em) {
     .c-featurette-heading {
@@ -134,7 +138,7 @@ main {
   }
 }
 
-/* Footer style */
+/* Footer style   ------------------------- */
 footer {
   font-size: 0.9rem;
   .footer-col {

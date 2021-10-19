@@ -16,9 +16,15 @@ body {
   padding: 0;
 }
 
+/* Header style ------------------------- */
 header {
   position: relative;
   padding: 0;
+  /* Carousel ------------------------- */
+  /* Main content ------------------------- */
+  /* Featurettes ------------------------- */
+  /* Thin out the marketing headings */
+  /* RESPONSIVE CSS --------------------------- */
 }
 
 header #title-logo-wrapper {
@@ -75,61 +81,42 @@ header .c-navbar .c-header-inner {
   margin: auto;
 }
 
-main {
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
-  /* Center align the text within the three columns below the carousel */
-  /* rtl:begin:ignore */
-  /* rtl:end:ignore */
-  /* Featurettes
-  ------------------------- */
-  /* Thin out the marketing headings */
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
+header #myCarousel .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
-main .carousel {
+header .carousel {
   margin-bottom: 4rem;
 }
 
-main .carousel .carousel-item {
+header .carousel .carousel-item {
   height: 40rem;
 }
 
-main .c-marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-main .c-marketing h2 {
-  font-weight: 400;
-}
-
-main .c-marketing .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-}
-
-main .c-featurette-divider {
+header .c-featurette-divider {
   margin: 5rem 0;
   /* Space out the Bootstrap <hr> more */
 }
 
-main .c-featurette-heading {
+header .c-featurette-heading {
   font-weight: 300;
   line-height: 1;
-  /* rtl:remove */
   letter-spacing: -0.05rem;
 }
 
 @media (min-width: 40em) {
-  main .c-featurette-heading {
+  header .c-featurette-heading {
     font-size: 50px;
   }
 }
 
 @media (min-width: 62em) {
-  main .c-featurette-heading {
+  header .c-featurette-heading {
     margin-top: 7rem;
   }
 }
@@ -143,7 +130,7 @@ main .c-featurette-heading {
   text-decoration: none;
 }
 
-/* Footer style */
+/* Footer style   ------------------------- */
 footer {
   font-size: 0.9rem;
 }
