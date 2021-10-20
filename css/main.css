@@ -53,6 +53,10 @@ header .c-navbar .c-header-inner {
 }
 
 /* Footer style   ------------------------- */
+footer {
+  font-family: "Montserrat", sans-serif;
+}
+
 footer img.c-footer-logo {
   width: 15%;
   margin: -2rem 0 0.8rem 0;

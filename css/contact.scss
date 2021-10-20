@@ -1,3 +1,5 @@
+@import "variables";
+
 * {
   padding: 0;
   margin: 0;
@@ -22,12 +24,15 @@ section {
 
   .contact-form {
     border-top: 1px solid rgb(138, 209, 187);
-    border-bottom: 1px solid rgb(138, 209, 187);
+    // border-bottom: 1px solid rgb(138, 209, 187);
     width: 60%;
   }
 }
 
 footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: $gray-300;
+
   img.c-footer-logo {
     width: 15%;
     margin: -2rem 0 0.8rem 0;
