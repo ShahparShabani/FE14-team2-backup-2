@@ -7,12 +7,12 @@
 .c-caro {
     width: 70%;
     margin: auto;
+    height: 100%;
 }
 
 .c-card-cont {
     width: auto;
     height: 21em !important;
-    margin-bottom: 4.5em;
     margin: auto;
     border: 0px solid transparent;
 }
@@ -24,7 +24,7 @@
     margin-left: 30%;
     position: absolute;
     object-fit: cover;
-    top: 75%;
+    top: 65%;
     left: 20%;
     transform: translate(-50%, -30%);
     border: 8px solid white;
@@ -33,12 +33,13 @@
 .c-img-cont {
     height: 7em;
     position: relative;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
 }
 
 .c-cardtxt-cont {
     background-color: whitesmoke;
-    border-radius: 2%;
-    padding-top: 5em;
+    padding-top: 5.5em;
     text-align: center;
 }
 
@@ -84,4 +85,55 @@
 
 .carousel-control-prev-icon {
     background-image: none !important;
+}
+
+.checked {
+    color: orange;
+}
+
+.c-b-image{
+    object-fit: cover;
+    height: 15em;
+    width: 100%;
+}
+
+.c-b-cardcont{
+    width: 55%;
+    height: 75em;
+    margin: auto;
+}
+
+.c-b-sepcard{
+    margin-top: .5em;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+.c-d-cartd-left{
+    float: right;
+}
+
+@media only screen and (max-width: 604px) {
+    .c-card-cont {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    .c-caro {
+        width: 100%;
+        margin: auto;
+    }
+
+    .c-d-cartd-left{
+        float: none;
+        margin: auto;        
+    }
+
+    .c-b-sepcard{
+        width: 100%;
+    }
+
+    .c-b-cardcont{
+        height: 65em;
+    }
 }
