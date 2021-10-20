@@ -2,89 +2,60 @@
   text-align: center;
   margin: auto;
   width: 40%;
-  margin-bottom: 2em;
+  margin-bottom: .5em;
   margin-top: 2em;
 }
 
 hr {
-  width: 30%;
+  width: 10%;
   margin: auto;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
-.c-top-find {
-  margin: auto !important;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  margin-left: 1.5em;
-  margin-right: 1em;
+.container {
+  position: relative;
+  -webkit-column-count: 4;
+          column-count: 4;
+  padding: 20px;
 }
 
-.c-top-find:hover {
-  color: gray;
+.image {
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 
-.c-top-cont {
-  width: auto;
-  margin: auto;
+.image:hover img {
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
-.c-horizontal {
-  border: 5px solid transparent;
-  height: 20em;
-  background-color: gray;
-}
-
-.c-card-img {
-  -o-object-fit: cover !important;
-     object-fit: cover !important;
-}
-
-.c-imgcont {
-  margin: auto;
-}
-
-.c-img-cont {
-  height: 100%;
-  width: 100% !important;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-shadow: 2px 2px 5px silver;
-          box-shadow: 2px 2px 5px silver;
-  border-radius: 0%;
-}
-
-.c-horiimg-div {
-  height: 35em;
+img {
   width: 100%;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
-.c-vertimg-div {
-  height: 50em;
+@media screen and (max-width: 768px) {
+  .container {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
 }
 
-.c-ptitle {
-  width: 69%;
-  margin: auto;
-  margin-top: 2em;
+@media screen and (max-width: 425px) {
+  .container {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
 }
 
-.c-title-hr {
-  width: 15%;
-  margin: auto;
-  font-style: italic;
-  text-align: left;
-  float: left;
-}
-
-.c-hr-cont {
-  width: 69%;
-  margin: auto;
-  margin-bottom: .5em;
-}
-
-html {
-  scroll-behavior: smooth;
+@media screen and (max-width: 375px) {
+  .container {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
