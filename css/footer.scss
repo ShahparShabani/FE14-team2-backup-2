@@ -1,6 +1,6 @@
 footer {
     font-family:'Montserrat', sans-serif;
-    background-color: rgba(95, 235, 211, 0.904);
+    background-color: rgb(187, 183, 183);
     img.c-footer-logo {
         width: 15%;
         margin:-2rem 0 .8rem 0;
@@ -16,7 +16,7 @@ footer {
 }
 
 // media queries for x-small screen
-@media screen  and (max-width: 576px) {
+@media screen  and (max-width: 575px) {
 
     footer {
         font-size: .8rem;
@@ -45,11 +45,31 @@ footer {
             }
             img{
                 width: 30%;
-                margin-top:-1.8rem;
+                margin-top:-1.5rem;
                 
             }
         }
         
+    }
+}
+
+@media screen  and (min-width: 768px) and (max-width:991px){
+   
+    footer {
+           
+        .c-footer-text{
+            p.c-firstP {
+                margin:0 -1.8rem;
+            }
+            p.c-secondP {
+                margin:0 -1rem;
+            }
+            img{
+                width: 30%;
+                margin-top:-2rem;
+                
+            }
+        }
     }
 }
 

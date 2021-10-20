@@ -1,6 +1,7 @@
 // selected all the elements with a class ".form-control"
 let input:any = document.querySelectorAll(".form-control");
 //added an event to the button submit. If the required inputs are empty only the first if condition runs, otherwise the second if condition runs.
+
 (document.getElementById("submit") as HTMLElement).addEventListener("click", function(){
 
     for (let i=0;i<=input.length; i++) {

@@ -1,6 +1,6 @@
 footer {
   font-family: 'Montserrat', sans-serif;
-  background-color: rgba(95, 235, 211, 0.904);
+  background-color: #bbb7b7;
 }
 
 footer img.c-footer-logo {
@@ -14,7 +14,7 @@ footer a:hover {
   font-weight: bold;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   footer {
     font-size: .8rem;
   }
@@ -38,7 +38,20 @@ footer a:hover {
   }
   footer .c-footer-text img {
     width: 30%;
-    margin-top: -1.8rem;
+    margin-top: -1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer .c-footer-text p.c-firstP {
+    margin: 0 -1.8rem;
+  }
+  footer .c-footer-text p.c-secondP {
+    margin: 0 -1rem;
+  }
+  footer .c-footer-text img {
+    width: 30%;
+    margin-top: -2rem;
   }
 }
 
