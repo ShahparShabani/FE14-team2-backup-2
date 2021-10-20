@@ -1,3 +1,4 @@
+@import "variables";
 * {
     padding: 0;
     margin: 0;
@@ -10,24 +11,27 @@ html {
 
 body {
     font-family:'Montserrat', sans-serif;
-
-   section.c-customer-top {
-       background-image: url(../img/alinaImg/colorful-gf7e4a87bd_640.png);
-       background-position: center;
-       background-repeat: no-repeat;
-       background-size: cover;
-   }
-
-   section.c-customer-clients {
-       img {
-           width: 10%;
-           height: 10%;
-       }
-       /* img.codeFactory {
-           margin
-       } */
-   }
    
+}
+
+section.c-customer-clients {
+    img {
+        width: 10%;
+        height: 10%;
+    }
+    img.nikon {
+        margin-top: -.5rem;
+    }
+    img.youtube {
+        margin-top: -.8rem;
+    }
+    img.panasonic {
+        width: 12%;
+        margin-top: -.8rem;
+    }
+    img.codeFactory {
+        width: 12%;
+    }
 }
 
 section.c-section-images {
@@ -41,102 +45,91 @@ section.c-section-images {
 }
 
 footer {
-
-    background-color: rgb(216, 208, 216);
-
+    font-family: "Montserrat", sans-serif;
+    background-color: $gray-300;
+  
     img.c-footer-logo {
-        width: 15%;
-        margin:-2rem 0 .8rem 0;
-        
+      width: 15%;
+      margin: -2rem 0 0.8rem 0;
     }
   
     li:hover,
     a:hover {
-        cursor: pointer;
-        font-weight: bold;
+      cursor: pointer;
+      font-weight: bold;
     }
-
-}
-
-// media queries for x-small screen
-@media screen  and (max-width: 576px) {
-
-    footer {
-        font-size: .8rem;
-        h4 {
-            font-size: 1rem;
-        }
-
-        div.c-footer-text {
-            display: none !important;
-        }
-    }
-}
-
-// media queries for small screen
-@media screen  and (min-width: 576px) and (max-width:767px){
-    section {
-        iframe {
-        width: 100%;
-        min-height: auto;
-        }
-    }
-    footer {
-        font-size: .8rem;
-    
-        .c-footer-text{
-            p.c-firstP {
-                margin:0 -1.5rem;
-            }
-            p.c-secondP {
-                margin:0 -1rem;
-            }
-            img{
-                width: 30%;
-                margin-top:-1.8rem;
-                
-            }
-        }
-        
-    }
-}
-
-
-// media queries for  medium screen
-@media screen  and (min-width: 768) and (max-width: 991px) {
-    
-    section {
-        iframe {
-        width: 100%;
-        min-height: auto;
-        }
-    }
-
-}
-
-// media queries for large screen
-@media screen  and (min-width: 992px) and (max-width: 1199px) {
-    section {
-
-        iframe {
-            width: 100%;
-            min-height: auto;
-        }
-       
-    }
-}
-
-// media queries for xl-xxl screen
-@media screen  and (min-width: 1200px) {
+  }
   
+  // media queries for x-small screen
+  @media screen and (max-width: 575px) {
     footer {
-        
-        p.c-secondP {
-            margin-left:-1.7rem;
-        }
-
-        p.c-firstP {
-            margin-right:-2.2rem;
-        }
+      font-size: 0.8rem;
+      h4 {
+        font-size: 1rem;
+      }
+  
+      div.c-footer-text {
+        display: none !important;
+      }
     }
-}
+  }
+  
+  // media queries for small screen
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    section {
+      iframe {
+        width: 100%;
+        min-height: auto;
+      }
+    }
+    footer {
+      font-size: 0.8rem;
+  
+      .c-footer-text {
+        p.c-firstP {
+          margin: 0 -1.5rem;
+        }
+        p.c-secondP {
+          margin: 0 -1rem;
+        }
+        img {
+          width: 30%;
+          margin-top: -1.8rem;
+        }
+      }
+    }
+  }
+  
+  // media queries for  medium screen
+  @media screen and (min-width: 768) and (max-width: 991px) {
+    section {
+      iframe {
+        width: 100%;
+        min-height: auto;
+      }
+    }
+  }
+  
+  // media queries for large screen
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    section {
+      iframe {
+        width: 100%;
+        min-height: auto;
+      }
+    }
+  }
+  
+  // media queries for xl-xxl screen
+  @media screen and (min-width: 1200px) {
+    footer {
+      p.c-secondP {
+        margin-left: -1.7rem;
+      }
+  
+      p.c-firstP {
+        margin-right: -2.2rem;
+      }
+    }
+  }
+  

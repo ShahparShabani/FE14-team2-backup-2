@@ -10,8 +10,7 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -103,4 +102,3 @@ footer a:hover {
     margin-right: -2.2rem;
   }
 }
-/*# sourceMappingURL=contact.css.map */
