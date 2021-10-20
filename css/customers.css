@@ -9,18 +9,24 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  line-height: 2rem;
-  background-color: #fffaff;
+}
+
+body section.c-customer-top {
+  background-image: url(../img/alinaImg/colorful-gf7e4a87bd_640.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-body canvas.background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+body section.c-customer-clients {
+  /* img.codeFactory {
+           margin
+       } */
+}
+
+body section.c-customer-clients img {
+  width: 10%;
+  height: 10%;
 }
 
 section.c-section-images div.c-images img {
