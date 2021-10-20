@@ -8,8 +8,11 @@
     <!-- bootstrap css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!-- google fonts link -->
-   <!--  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Satisfy&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <!-- my css link -->
     <link rel="stylesheet" href="../css/customers.css">
@@ -19,9 +22,9 @@
 <body>
    <!-- customer page starts-->
     <section class="c-section-text container my-3">
-        <h1 class="text-center">Canon Company</h1>
-        <p class="lead">Let's see what one of the biggest photography companies in the world has to say about Us:</p>
-        <div>
+        <h1 class="text-center mb-3">Canon Company</h1>
+        <p>Let's see what one of the biggest photography companies in the world has to say about <span class="fw-bold">Us:</span></p>
+        <blockquote class="blockquote">
             <p>Team Two Photography have solved a huge headache for us, to be able to shoot beautiful lifestyle images in the right settings, quickly enough to launch products. We gave them our latest product Canon EOS R6 Camera to test it and we received back beautiful photos for our clients. Definitely 100% recommended by us because :
             </p>
 
@@ -31,13 +34,14 @@
             <p> > Position is very important when you take a photo and they know very well the spatial relationships between objects in your frame – their sizes, their placements, and the space between them.</p>
 
             <p>You can see down below few photos that they took for us from all over the world.</p>
-        </div>
+        </blockquote>
     </section>
 
     <section class="c-section-images container">
-        <div class="">
+        <figure>
             <img src="../img/alinaImg/canon_adobespark (1).png" alt="canon camera" class="rounded mx-auto d-block w-25">
-        </div>
+            <figcaption class="blockquote-footer text-center">enjoy the photos, <cite title="Canon EOS R6">Canon EOS R6</cite></figcaption>
+        </figure>
         
         <div class="c-images d-flex flex-wrap justify-content-center">
             <img src="../img/alinaImg/Cherry Blossom.jpg" alt="" class="rounded">
@@ -57,7 +61,57 @@
     </section>
     <!-- customer page ends-->    
         
+    <!-- footer section starts  -->
+    <footer class="py-5">
+        <div class="container d-flex flex-wrap justify-content-sm-around justify-content-between text-capitalize">
+            <div class="c-footer-col">
+                <h4>Company</h4>
+                <ul class="list-unstyled">
+                    <li>about</li>
+                    <li>testimonials</li>
+                    <li>customers</li>
+                    <li>contact</li>
+                </ul>
+            </div>
 
+            <div class="c-footer-col">
+                <h4>portfolio</h4>
+                <ul class="list-unstyled">
+                    <li>iceland</li>
+                    <li>australia</li>
+                    <li>south africa</li>
+                    <li>japan</li>
+                </ul>
+            </div>
+
+            <div class="c-footer-col">
+                <h4>get help</h4>
+                <ul class="list-unstyled">
+                    <li>FAQ</li>
+                    <li>order status</li>
+                    <li>payment options</li>
+                </ul>
+            </div>
+
+            <div class="c-footer-social-links my-3">
+                <h4>follow us</h4>
+                <a href="#" class="fab fa-facebook-f text-decoration-none me-2 text-dark lead"></a>
+                <a href="#" class="fab fa-twitter text-decoration-none me-2 text-dark lead"></a>
+                <a href="#" class="fab fa-instagram text-decoration-none me-2 text-dark lead"></a>
+                <a href="#" class="fab fa-linkedin text-decoration-none me-2 text-dark lead"></a>
+                <a href="#" class="fab fa-pinterest text-decoration-none me-2 text-dark lead"></a>
+
+            </div>
+        </div>
+
+        <div class="c-footer-text text-center mt-5 d-flex flex-row justify-content-center">
+            <p class="c-firstP">Created By</p>
+            <img src="../img/alinaImg/logo.png" class="c-footer-logo"> 
+            <p class="c-secondP">| All Rights Reserved</p>
+        </div>
+
+    </footer>
+    <!-- footer section ends -->
 
     <!-- bootstrap bundle link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
