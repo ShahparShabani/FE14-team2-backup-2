@@ -4,16 +4,12 @@
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-image: url("../img/alinaImg/color-g3cd038797_1280.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
 }
 
 section {
@@ -34,7 +30,7 @@ section .contact-form {
 
 footer img.c-footer-logo {
   width: 15%;
-  margin: -2rem 0 .8rem 0;
+  margin: -2rem 0 0.8rem 0;
 }
 
 footer li:hover,
@@ -45,7 +41,7 @@ footer a:hover {
 
 @media screen and (max-width: 576px) {
   footer {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   footer h4 {
     font-size: 1rem;
@@ -61,7 +57,7 @@ footer a:hover {
     min-height: auto;
   }
   footer {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   footer .c-footer-text p.c-firstP {
     margin: 0 -1.5rem;
@@ -97,3 +93,4 @@ footer a:hover {
     margin-right: -2.2rem;
   }
 }
+/*# sourceMappingURL=contact.css.map */
